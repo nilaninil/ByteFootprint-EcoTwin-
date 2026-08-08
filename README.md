@@ -71,7 +71,8 @@ Green Web Foundation (greenwebfoundation.org) & Google Environmental Insights Ex
 # Built for PixxelHack 2.0, TCET-ACM-SIGITE Student Chapter.
 
 Nilani S — Concept, product design, emission-factor logic, UI/UX direction, core application build
-Harshana B — Deployment & submission logistics
+
+Harshana B — Concept,deployment & submission logistics
 # 📄 License
 
 Built as a hackathon project for PixxelHack 2.0. Educational use.
