@@ -1,0 +1,6 @@
+{
+  "name": "EcoTwin",
+  "description": "Your carbon footprint, given a pulse. A living tree companion that grows or wilts based on your real physical and digital habits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

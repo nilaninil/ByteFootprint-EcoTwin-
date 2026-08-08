@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-instrument {
+    font-family: 'Instrument Serif', Georgia, serif;
+  }
+  
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px -5px rgba(27, 43, 30, 0.08), 0 4px 12px rgba(27, 43, 30, 0.03);
+  }
+
+  .glass-card-emerald {
+    background: rgba(240, 253, 244, 0.78);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(187, 247, 208, 0.8);
+    box-shadow: 0 8px 24px -4px rgba(47, 143, 91, 0.12);
+  }
+}
+
+/* Hide scrollbar for clean horizontal nav */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Dark Mode Styles */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body,
+html.dark .min-h-screen {
+  background-color: #0B130D !important;
+  color: #E2ECE4 !important;
+}
+
+html.dark header {
+  background-color: rgba(11, 19, 13, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html.dark .bg-white,
+html.dark .bg-\[\#F4F7F2\],
+html.dark .bg-\[\#F6FAF4\],
+html.dark .bg-\[\#F3F6F0\],
+html.dark .bg-\[\#E9F0E8\] {
+  background-color: rgba(18, 30, 21, 0.88) !important;
+  color: #E2ECE4 !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+html.dark .text-\[\#1B2B1E\] {
+  color: #E6F0E8 !important;
+}
+
+html.dark .text-gray-600,
+html.dark .text-gray-500,
+html.dark .text-gray-700 {
+  color: #A3B8A8 !important;
+}
+
+html.dark .bg-emerald-50,
+html.dark .bg-emerald-100\/50,
+html.dark .bg-emerald-100\/60 {
+  background-color: rgba(47, 143, 91, 0.2) !important;
+}
+
+html.dark .glass-card-light {
+  background: rgba(18, 30, 21, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+html.dark footer {
+  background-color: rgba(11, 19, 13, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
