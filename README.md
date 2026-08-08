@@ -1,46 +1,50 @@
-ByteFootprint × EcoTwin 🌱
+# ByteFootprint × EcoTwin 🌱
 
 Your carbon footprint, given a pulse.
 
-Built for PixxelHack 2.0 — a National Level Web Development Hackathon by TCET-ACM-SIGITE.
+Built for PixxelHack 2.0 — a National Level Web Development Hackathon by TCET-ACM-SIGITE Student Chapter.
 
-The Problem
+🔗 Live App: bytefootprintxecotwin.vercel.app
 
-Most sustainability apps assume the problem is visibility — students overspend their carbon budget because they can't see where it goes. But there's a deeper blind spot: students who stay in and stream instead of driving already feel eco-conscious for it — and they're often wrong. No existing student sustainability tool tracks the carbon cost of digital habits: streaming, cloud storage, and email.
+# The Problem
 
-The Solution
+Most students believe staying indoors and streaming instead of driving automatically makes them eco-friendly. They're often wrong — and no existing student sustainability tool tells them so. Every competing app tracks physical habits (transport, food, energy) because those are visible and intuitive. Nobody tracks the carbon cost of streaming in 4K, backing up files to the cloud, or sending large email attachments.
 
-ByteFootprint × EcoTwin tracks the one carbon source every student generates daily but no other app measures — digital footprint — alongside standard transport, food, and energy habits. Instead of a static score, the result is delivered through EcoTwin, a living tree companion that visibly thrives or wilts based on your real footprint, turning an invisible number into something you actually feel and return to daily.
+ # The Solution
 
-✨ Features
-🌳 EcoTwin — an illustrated, animated tree companion with 5 growth stages (Wilted → Recovering → Budding → Thriving → Flourishing), reacting to your real habits
-📊 Carbon Footprint Estimator — real emission-factor calculations across Transport, Food, Energy, and Digital (streaming, cloud, email)
-🎯 Personalized Eco Challenges — one actionable challenge generated daily from your worst-impact category
-🏆 Green Score & Badges — a live score plus unlockable achievements for streaks and milestones
-♻️ Recycling & E-Waste Guide — searchable disposal reference, including tech/e-waste
-💡 Daily Eco Tips — rotating knowledge cards, including digital-carbon facts most people have never seen
-📈 Trends & Filmstrip — footprint history by category over time, plus a visual record of your twin's growth journey
-🔒 Local-only profile — no real accounts, no backend, no data ever leaves your browser
-🛠️ Tech Stack
-React.js — component architecture
+ByteFootprint × EcoTwin tracks the one carbon source every student generates daily but no other app measures — digital footprint — alongside standard transport, food, and energy habits. Instead of a static score, the result is delivered through EcoTwin, a living tree companion that visibly thrives or wilts based on real behavior, turning an invisible number into something you actually feel and return to daily.
+
+# Features
+🌳 EcoTwin Growth System — an animated tree companion with multiple growth stages (Wilted → Recovering → Budding → Thriving → Flourishing), reacting in real time to logged habits
+📊 Carbon Footprint Estimator — emission-factor calculations across Transport, Food, Household & Energy, and Digital Footprint (streaming, cloud storage, email, video calls)
+🎯 Personalized Eco Challenges — one actionable challenge generated daily from the user's worst-impact category
+🏆 Green Score & Consistency/Streak Tracker — a live score plus streak-based accountability
+🎖️ Achievement Badges — unlockable milestones for consistent habits
+♻️ Recycling & E-Waste Bin Guide — searchable disposal reference, including dedicated tech/e-waste categories (old laptops, phones, charging cables)
+💡 Daily Eco Tips — rotating knowledge cards, including digital-carbon facts most users have never seen (e.g. "the 4K video myth")
+📈 Footprint Trends & Filmstrip — category-wise footprint history and a visual record of the tree's growth journey over time
+🔒 Local-first & Private — no backend accounts required; users' data stays local, never shared
+# Tech Stack
+React + TypeScript — component architecture
 Tailwind CSS — responsive, utility-first styling
-Framer Motion — EcoTwin animations and page transitions
-Chart.js — footprint trend visualization
-Web Storage API (localStorage) — fully client-side persistence, no backend or database
-⚙️ How It Works
+Framer Motion — EcoTwin animations and transitions
+Chart.js / Recharts — footprint trend visualizations
+Vite — build tooling
+Vercel — deployment
+# How It Works
 Log Daily Habits (Transport · Food · Energy · Digital)
         ↓
 Emission-Factor Engine (real published sources: IEA, IPCC)
         ↓
-Worst-Impact Category Detected  →  usually: Digital
+Worst-Impact Category Detected  →  usually: Digital Footprint
         ↓
 EcoTwin Visual State Updates  +  Personalized Challenge Generated
         ↓
-Trend Dashboard (Green Score, History, Badges)
+Trend Dashboard (Green Score, History, Badges, Streaks)
 
-All calculations run entirely client-side. No server, no API keys, no user accounts — your data lives only in your browser's local storage.
+All core calculations run client-side using published emission-factor research — no black-box AI model, no unverifiable numbers.
 
-🚀 Getting Started
+# Getting Started Locally
 bash
 # Clone the repository
 git clone <repo-url>
@@ -48,8 +52,26 @@ cd bytefootprint-ecotwin
 
 # Install dependencies
 npm install
+# or: bun install
 
 # Run locally
 npm run dev
 
-The app will be available at http://localhost:5173 (or your framework's default port).
+The app will be available at http://localhost:5173 by default (Vite).
+
+📚 Research & References
+IEA — Digitalization & Energy Report (iea.org)
+The Shift Project — Lean ICT: Towards Digital Sobriety (theshiftproject.org)
+Malmodin & Lundén (2018) — Energy & Carbon Footprint of Global ICT/E&M Sectors, Sustainability journal
+Aslan et al. (2021) — Electricity Intensity of Internet Data Transmission, Journal of Industrial Ecology
+IPCC Guidelines for National Greenhouse Gas Inventories — Emission Factors for Electricity
+Green Web Foundation (greenwebfoundation.org) & Google Environmental Insights Explorer
+👥 Team — Code Masters
+
+# Built for PixxelHack 2.0, TCET-ACM-SIGITE Student Chapter.
+
+Nilani S — Concept, product design, emission-factor logic, UI/UX direction, core application build
+Harshana B — Deployment & submission logistics
+# 📄 License
+
+Built as a hackathon project for PixxelHack 2.0. Educational use.
